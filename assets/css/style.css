@@ -1,0 +1,104 @@
+/* FONTS */
+@font-face {
+    font-family: 'Mauline';
+    src: url('../font/Mauline-Regular.woff2') format('woff2'),
+        url('../font/Mauline-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* FONTS */
+
+/* DEFAULT STYLE */
+
+:root {
+    --green-color : rgb(51, 75, 53);
+    --yellow-color : rgb(250, 175, 20);
+    --black-color : rgb(0, 0, 0);
+    --white-color : rgb(246, 238, 225);
+    --orange-color : rgb(255, 95, 50);
+    --default-text-size : 20px;
+    --h4-text-size : 30px
+}
+
+/* DEFAULT STYLE */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--green-color);
+    z-index: 0;
+}
+
+main {
+    width: 100%;
+    height: 300vh;
+    z-index: 0;
+}
+
+.div-title {
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.div-title h4 {
+    font-family: 'Mauline';
+    font-size: var(--h4-text-size);
+    color: var(--white-color);
+}
+
+.svg-title {
+    stroke-width: 0px;
+    fill: var(--orange-color);
+}
+
+.div-button {
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    padding-right: 30px;
+
+}
+
+.div-button a {
+    text-decoration: none;
+    font-family: 'Mauline';
+    color: var(--white-color);
+    font-size: var(--default-text-size);
+}
+
+.div-button .header-button {
+    border: none;
+    background-color: var(--yellow-color);
+    font-size: var(--default-text-size);
+    font-family: 'Mauline';
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.green {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--green-color);
+}
+
+.black {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--black-color);
+}
