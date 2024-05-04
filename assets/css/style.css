@@ -1,4 +1,7 @@
 /* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @font-face {
     font-family: 'Mauline';
     src: url('../font/Mauline-Regular.woff2') format('woff2'),
@@ -13,13 +16,14 @@
 /* DEFAULT STYLE */
 
 :root {
-    --green-color : rgb(51, 75, 53);
-    --yellow-color : rgb(250, 175, 20);
-    --black-color : rgb(0, 0, 0);
-    --white-color : rgb(246, 238, 225);
-    --orange-color : rgb(255, 95, 50);
-    --default-text-size : 20px;
-    --h4-text-size : 30px
+    --green-color : #324B32;
+    --yellow-color : #FAAF14;
+    --black-color : #000;
+    --white-color : #F5F0E1;
+    --orange-color : #FF5F32;
+    --default-text-size : 1vw;
+    --h1-text-size : 12vw;
+    --h4-text-size : 2vw
 }
 
 /* DEFAULT STYLE */
@@ -38,6 +42,7 @@ header {
     justify-content: space-between;
     background-color: var(--green-color);
     z-index: 0;
+    -webkit-user-select: none;
 }
 
 main {
@@ -50,7 +55,7 @@ main {
     display: inherit;
     flex-direction: row;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 1vw;
     text-decoration: none;
 }
 
@@ -61,8 +66,7 @@ main {
 }
 
 .svg-title {
-    stroke-width: 0px;
-    fill: var(--orange-color);
+    width: 3vw;
 }
 
 .div-button {
@@ -76,7 +80,8 @@ main {
 
 .div-button a {
     text-decoration: none;
-    font-family: 'Mauline';
+    font-family: 'Poppins';
+    font-weight: 600;
     color: var(--white-color);
     font-size: var(--default-text-size);
 }
@@ -85,7 +90,9 @@ main {
     border: none;
     background-color: var(--yellow-color);
     font-size: var(--default-text-size);
-    font-family: 'Mauline';
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: var(--green-color);
     text-align: center;
     padding: 10px 20px;
     border-radius: 30px;
@@ -93,12 +100,110 @@ main {
 
 .green {
     width: 100%;
-    height: 80vh;
+    height: 38vw;
     background-color: var(--green-color);
+    -webkit-user-select: none;
+
+}
+
+.div-green {
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    padding-top: 1vw;
+}
+
+.div-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5vw;
+    width: 20vw;
+    height: 15vw;
+    padding-left: 2vw;
+    background-color: var(--green-color);
+    z-index: 2;
+    position: absolute;
+    margin-left: 60vw;
+    margin-top: -20vw;
+}
+
+.div-media p {
+    color: var(--white-color);
+    font-family: 'Poppins';
+    font-size: 2vw;
+    margin: 0px;
+}
+
+.div-media a {
+    color: var(--white-color);
+    font-family: 'Poppins';
+    font-size: 1.5vw;
+    text-decoration: none;
+    margin: 0px;
+}
+
+.ig-photo{
+    width: fit-content;
+    position: absolute;
+    margin-top: -31.5vw;
+    margin-left: 12vw;
+    z-index: 2;
+}
+.ig-photo img{
+    margin: 0px;
+    padding: 0px;
+    width: 33vw;
+}
+
+
+.big-title {
+    font-family: 'Mauline';
+    font-size: var(--h1-text-size);
+    color: var(--white-color);
+    text-align: center;
+    margin: 0vw 0vw -7vw 0vw;
+    padding: 0px;
+    z-index: 3;
+}
+
+.shadow-title {
+    font-family: 'Mauline';
+    font-size: var(--h1-text-size);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-color: var(--yellow-color);
+    text-align: center;
+    margin: 0vw 0vw -7vw 0vw;
+    padding: 0px;
+    z-index: 1;
 }
 
 .black {
     width: 100%;
-    height: 10vh;
+    height: 14vw;
     background-color: var(--black-color);
+}
+
+
+.sparkle-ig {
+    position: absolute;
+    margin-top: -31.5vw;
+    margin-left: 12vw;
+    z-index: 3;
+}
+
+#sparkle {
+    width: 4vw;
+    margin-top: 33.2svw;
+    margin-left: 31.4vw;
+}
+
+#more-sparkles {
+    transform: rotateZ(180deg);
+    width: 6vw;
+    position: absolute;
+    margin-top: 4vw;
+    margin-left: -3vw;
 }
