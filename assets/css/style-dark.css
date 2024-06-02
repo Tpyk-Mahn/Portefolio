@@ -16,11 +16,11 @@
 /* DEFAULT STYLE */
 
 :root {
-    --green-color : #060340;
+    --green-color : #4E3636;
     --yellow-color : #E07070;
-    --black-color : #040316;
-    --white-color : #555555;
-    --orange-color : #BF2647;
+    --black-color : #321E1E;
+    --white-color : #116D6E;
+    --orange-color : #CD1818;
     --default-text-size : 1vw;
     --h1-text-size : 12vw;
     --h2-text-size : 6vw;

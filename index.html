@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="icon" type="image/x-icon" href="./assets/img/sparkle-title.svg">
         <link rel="stylesheet" href="assets/css/style.css">
-        <script src=""></script>
+        <script src="./assets/js/script.js"></script>
     </head>
     <body>
         <header id="header">
@@ -17,7 +17,7 @@
             <div class="div-button">
                 <a href="index.html#about">A propos de moi</a>
                 <a href="index.html#cv">CV</a>
-                <button class="header-button" type="button">Me contacter!</button>
+                <button class="header-button" type="button" onclick="document.getElementById('contact').style.visibility='visible';">Me contacter!</button>
             </div>
         </header>
         <main>
@@ -33,7 +33,7 @@
                         <p class="media-contact">LI:<a href="https://www.linkedin.com/in/vianney-mql/"> /vianney-mql</a></p>
                     </div>
                     <div class="ig-photo">
-                        <img src="./assets/img/wtcdg.png" alt="ig-photo">
+                        <img src="./assets/img/main-ig.png" alt="ig-photo">
                     </div>
                     <div class="sparkle-ig">
                         <img id="more-sparkles" src="./assets/img/sparkles-ig-photo.svg" alt="more-sparkles">
@@ -55,7 +55,7 @@
                         <div class="div-button">
                             <a href="index.html#about">A propos de moi</a>
                             <a href="index.html#cv">CV</a>
-                            <button class="header-button" type="button">Me contacter!</button>
+                            <button class="header-button" type="button" onclick="document.getElementById('contact').style.visibility='visible';">Me contacter!</button>
                         </div>
                     </div>
                     <div class="me">
@@ -67,7 +67,7 @@
                     <div class="me-photo">
                         <div class="me-photo-green">
                             <img  class="me-photo-green-circle" src="./assets/img/circle-white.svg" alt="white-circle">
-                            <img class="profil-photo" src="" alt="moi">
+                            <img class="profil-photo" src="./assets/img/moi.png" alt="moi">
                             <p class="me-photo-bubble" id="bubble1">2 janvier 2006</p>
                             <p class="me-photo-bubble" id="bubble2">Français</p>
                         </div>
@@ -82,7 +82,7 @@
                 <section class="cv" id="cv">
                     <div id="yline"></div>
                     <div id="wline"></div>
-                    <div class="cv-left">
+                    <div class="left">
                         <h3 class="cv-yellow-h3">Formation</h3>
                         <div class="cv-progression">
                             <div>
@@ -115,7 +115,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cv-right">
+                    <div class="right">
                         <div>
                             <h2 class="shadow-subtitle">PARCOURS</h2>
                             <h2 class="shadow-subtitle">PARCOURS</h2>
@@ -148,7 +148,69 @@
                     </div>
                 </section>
                 <section class="cv2">
-
+                    <div class="left">
+                        <h3 class="cv2-h3 selectable">Projets</h3>
+                    </div>
+                    <div class="right">
+                        <h3 class="cv2-h3 selectable">Langues</h3>
+                        <div class="cv2-wrap">
+                            <div>
+                                <h4 class="selectable">Français</h4>
+                                <p class="selectable">Natif</p>
+                            </div>
+                            <div>
+                                <h4 class="selectable">Anglais</h4>
+                                <p class="selectable">Confirmé</p>
+                             </div>
+                            <div>
+                                <h4 class="selectable">Allemand</h4>
+                                <p class="selectable">Intermédiaire</p>
+                            </div>
+                        </div>
+                        <h3 class="cv2-h3 selectable">Centres d'intérêts</h3>
+                        <div class="cv2-wrap">
+                            <div class="hobbie">
+                                <img src="./assets/img/musique.svg" alt="musique-logo" class="hobbie-logo">
+                                <p class="selectable">Musique</p>
+                            </div>
+                            <div class="hobbie">
+                                <img src="./assets/img/volley.svg" alt="volley-logo" class="hobbie-logo">
+                                <p class="selectable">VolleyBall</p>
+                             </div>
+                            <div class="hobbie">
+                                <img src="./assets/img/dessin.svg" alt="dessin-logo" class="hobbie-logo">
+                                <p class="selectable">Dessin</p>
+                            </div>
+                            <div class="hobbie">
+                                <img src="./assets/img/gaming.svg" alt="jv-logo" class="hobbie-logo">
+                                <p class="selectable">Jeux vidéos</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact" id="contact">
+                    <div class="contact-div">
+                        <h2 class="contact-h2">Contact</h2>
+                        <h2 class="contact-shadow">Contact</h2>
+                        <img  class="contact-img" src="./assets/img/contact-img.png" alt="teuté">
+                        <div class="contact-field">
+                            <div id="vline"></div>
+                            <h4>Informations</h4>
+                            <h5><img class="svg-point" src="./assets/img/sparkle-title.svg" alt="sparkle"><img class="svg-icon" src="./assets/img/phone-black.svg" alt="phone"><p class="selectable"> +33 6 51 62 70 35</p></h5>
+                            <h5><img class="svg-point" src="./assets/img/sparkle-title.svg" alt="sparkle"><img class="svg-icon" src="./assets/img/mail-black.svg" alt="mail"><p class="selectable"> vianneymiquel@laposte.net</p></h5>
+                            <h5><img class="svg-point" src="./assets/img/sparkle-title.svg" alt="sparkle"><img class="svg-icon" src="./assets/img/linkedin.svg" alt="linkedin"><p class="selectable"> linkedin.com/in/vianney-mql/</p></h5>
+                            <h5><img class="svg-point" src="./assets/img/sparkle-title.svg" alt="sparkle"><img class="svg-icon" src="./assets/img/insta.svg" alt="instagram"><p class="selectable"> instagram.com/vianney_mql/</p></h5>
+                        </div>
+                        <div class="contact-black"></div>
+                        <div class="contact-message">
+                            <h4>Envoyer un message</h4>
+                            <textarea name="uwu" placeholder="Entrez votre message..." id="contact-text"></textarea>
+                        </div>
+                        <img src="./assets/img/corner.svg" alt="cloud" class="contact-corner">
+                        <button class="contact-submit" onclick="document.getElementById('contact').style.visibility='hidden';">Valider</button>
+                        <img id="contact-sparkles" src="./assets/img/sparkles-ig-photo.svg" alt="more-sparkles">
+                        <button class="contact-cancel" onclick="document.getElementById('contact').style.visibility='hidden';">X</button>
+                    </div>
                 </section>
         </main>
     </body>
