@@ -114,7 +114,7 @@
                                 </div>
                             </div>
                             <div class="cv-download">
-                                <button id="cv-btn" onclick="window.location.href='assets/cv.pdf'">
+                                <button onclick="window.location.href='assets/cv.pdf'">
                                     Voir mon CV !
                                 </button>
                             </div>
@@ -153,19 +153,18 @@
                     <div class="left">
                         <h3 class="cv2-h3 selectable">Projets</h3>
                         <div class="cv2-wrap">
-                            <div class="hobbie btn-img">
+                            <div class="hobbie btn-img" onclick="document.getElementById('sae104').style.visibility='visible';">
                                 <img src="./assets/img/website.svg" alt="website-logo" class="hobbie-logo">
                                 <p class="selectable">Site web</p>
                             </div>
-                            <div class="hobbie btn-img">
+                            <div class="hobbie btn-img" onclick="document.getElementById('sae1056').style.visibility='visible';">
                                 <img src="./assets/img/database.svg" alt="database-logo" class="hobbie-logo">
                                 <p class="selectable">Base de données</p>
                             </div>
-                            <div class="hobbie btn-img">
+                            <div class="hobbie btn-img" onclick="document.getElementById('pyphonk').style.visibility='visible';">
                                 <img src="./assets/img/pyphonk.svg" alt="album-logo" class="hobbie-logo">
                                 <p class="selectable">Album de Musique</p>
                             </div>
-
                         </div>
                     </div>
                     <div class="right">
@@ -227,6 +226,31 @@
                         <button class="contact-submit" onclick="document.getElementById('contact').style.visibility='hidden';">Valider</button>
                         <img id="contact-sparkles" src="./assets/img/sparkles-ig-photo.svg" alt="more-sparkles">
                         <button class="contact-cancel" onclick="document.getElementById('contact').style.visibility='hidden';">X</button>
+                    </div>
+                </section>
+                <section class="contact" id="sae104">
+                    <div class="sae104-div">
+                        <h3>Création d'un site web</h3>
+                        <p class="selectable">Durant le 1er semestre, dans le cadre de ma formation, j'ai réalisé en groupe de 4 un site web à l'attention des élèves de 3èmes pour une entreprise du secteur informatique. Le but était de présenter et promouvoir l'entreprise, afin de les inciter à demander ue stage d'observation chez cette entreprise. Mon groupe et moi avons réalisé un site pour l'entreprise CGI. Il fallait donc respecter la charte graphique et la structure des pages de leur site, afin que notre site puisse être parfaitement intégré dans le leur.</p>
+                        <button class="sae104-btn" onclick="window.location.href='https://cgi.loukaaa.com/'">Accéder au site !</button>
+                        <button class="sae104-btn" onclick="window.location.href='https://docs.google.com/document/d/1_6whqVAPQsKCHMeQRtIbAmne4oaJDltq/edit?usp=drive_link&ouid=115821541004628014701&rtpof=true&sd=true'">Documents annexes</button>
+                        <button class="contact-cancel" onclick="document.getElementById('sae104').style.visibility='hidden';">X</button>
+                    </div>
+                </section>
+                <section class="contact" id="sae1056">
+                    <div class="sae1056-div">
+                        <h3>Création d'une base de données</h3>
+                        <p class="selectable">Durant le 1er semestre, dans le cadre de ma formation, j'ai réalisé en groupe de 2 une base de données, qui recensait tous les passagers à bord du Titanic lors de son naufrage avec plusieurs tables et variables pour chaque passager. L'objectif final était de faire des statistiques sur le taux de décès/survie des passagers selon les paramètres. Malheureusement la base de donnée n'est plus disponible actuellement, mais il reste tout de même les documents et rendus écrits du projet</p>
+                        <button class="sae1056-btn" onclick="window.location.href='https://drive.google.com/drive/folders/1pKO64Yg81d2gIXWq197gv3NYLCRf5fLB?usp=drive_link'">Accéder au documents</button>
+                        <button class="contact-cancel" onclick="document.getElementById('sae1056').style.visibility='hidden';">X</button>
+                    </div>
+                </section>
+                <section class="contact" id="pyphonk">
+                    <div class="pyphonk-div">
+                        <h3>Création d'un album de musique</h3>
+                        <p class="selectable">Durant mon année de Terminale, en dehors de ma formation, j'ai avec des amis travaillée sur un album de musique. La voix est celle de notre prof d'informatique (consentant bien sûr !) provenant de vielles vidéos pédagogiques qu'il avait réalisées. L'album a donc une vocation avant tout <strong>comique</strong>. Le projet à duré 3 mois, et m'a permis d'apprendre beaucoup, car totalement en autonomie. Même si le projet par d'un blague, nous avons poussé le concept puisque nous avons produit 7 sons que nous avons mis en ligen sur toutes les plateformes de distribution de musique. de plus je me suis particulièrement occupé des démarche pour produire une version physique des disques -- graver les disques, obtenirs des cassettes de cd, imprimer des autocollants spéciaux pour disque, commander des vinyles... Une grande partie du projet à aussi été consacré à la direction artistique, les visuels, réalisations d'affiches type affiche de film, organisation d'une soirée avec scène, pyrotechnie, DJ, ateliers et animations... Je retiens un très bon souvenir de ce projet, et notre professeur était très content lorsqu'on lui a offert un CD !</p>
+                        <iframe  class="mxtp" style="border-radius:12px" src="https://open.spotify.com/embed/album/6eM8js3gJdG48L2y6eV7NY?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <button class="contact-cancel" onclick="document.getElementById('pyphonk').style.visibility='hidden';">X</button>
                     </div>
                 </section>
         </main>
