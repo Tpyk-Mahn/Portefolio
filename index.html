@@ -40,7 +40,7 @@
                         <img id="sparkle" src="./assets/img/sparkle-ig-photo.svg" alt="sparkle">
                     </div>
                     <div class="white-text">
-                        <p>De nature curieuse, je suis toujours interéssé par de nouvelles expériences. Cependant, j'approche toujours les problèmes de manière pragmatique et prudente. Je cherche souvent la solution la plus simple et la plus efficace.</p>
+                        <p>De nature curieuse, je suis toujours intéréssé par de nouvelles expériences. Cependant, j'approche toujours les problèmes de manière pragmatique et prudente. Je cherche souvent la solution la plus simple et la plus efficace.</p>
                     </div>
                 </section>
                 <section class="black">
@@ -61,7 +61,7 @@
                     <div class="me">
                         <h2 class="selectable">Salut,</h2>
                         <h2 class="pti-h2 selectable">C'est Vianney !</h2>
-                        <p class="selectable">Je suis un étudiant en informatique dynamique, curieux et de bonne volonté. Je suis actuellement en 1ère année de BUT Informatique à Grenoble. Malgré mon manque d'experience professionnelle, je m'adapte rapidement et facilement face au changement.</p>
+                        <p class="selectable">Je suis un étudiant en informatique dynamique, curieux et de bonne volonté. Je suis actuellement en 1ère année de BUT Informatique à Grenoble. Malgré mon manque d'expérience professionnelle, je m'adapte rapidement et facilement face au changement.</p>
                         <a href="https://www.linkedin.com/in/vianney-mql/"><img src="./assets/img/search_google.svg" alt="search-google">linkedin.com/in/vianney-mql</a>
                     </div>
                     <div class="me-photo">
@@ -81,7 +81,6 @@
                 </section>
                 <section class="cv" id="cv">
                     <div id="yline"></div>
-                    <div id="wline"></div>
                     <div class="left">
                         <h3 class="cv-yellow-h3">Formation</h3>
                         <div class="cv-progression">
@@ -100,18 +99,24 @@
                             </div>
                         </div>
                         <div class="cv-experience">
+                            <div id="wline"></div>
                             <h3 class="cv-black-h3">Experience</h3>
                             <div class="cv-progression">
                                 <div class="cv-date">
-                                    <h4><img class="svg-point" src="./assets/img/sparkle-white.svg" alt="sparkle">2023-202?</h4>
-                                    <h4><img class="svg-point" src="./assets/img/sparkle-white.svg" alt="sparkle">2020-2023</h4>
-                                    <h4><img class="svg-point" src="./assets/img/sparkle-white.svg" alt="sparkle">2016-2020</h4>
+                                    <h4><img class="svg-point" src="./assets/img/sparkle-white.svg" alt="sparkle">2023</h4>
+                                    <h4><img class="svg-point" src="./assets/img/sparkle-white.svg" alt="sparkle">2020</h4>
                                 </div>
                                 <div class="cv-desc">
-                                    <p><h5></h5></p>
-                                    <p><h5></h5></p>
-                                    <p><h5></h5></p>
+                                    <h5 class="school" onclick="window.location.href='https://open.spotify.com/intl-fr/album/6eM8js3gJdG48L2y6eV7NY?si=5TtInF8OTEGdx-thiCT2Pg'">LocalHost Mixtape</h5>
+                                    <p>Album de musique & organisations d'évenements</p>
+                                    <h5 class="school" onclick="window.location.href='https://www.pheliqs.fr/'">Stage d'observation 3ème</h5>
+                                    <p>Stage au laboratoire PHELIQS au CEA</p>
                                 </div>
+                            </div>
+                            <div class="cv-download">
+                                <button id="cv-btn" onclick="window.location.href='assets/cv.pdf'">
+                                    Voir mon CV !
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -142,14 +147,26 @@
                                 <img class="btn-img" src="./assets/img/markdown.svg" alt="markdown-logo" onclick="window.location.href='https://fr.wikipedia.org/wiki/Markdown';">
                             </div>
                         </div>
-                        <div>
-
-                        </div>
                     </div>
                 </section>
                 <section class="cv2">
                     <div class="left">
                         <h3 class="cv2-h3 selectable">Projets</h3>
+                        <div class="cv2-wrap">
+                            <div class="hobbie btn-img">
+                                <img src="./assets/img/website.svg" alt="website-logo" class="hobbie-logo">
+                                <p class="selectable">Site web</p>
+                            </div>
+                            <div class="hobbie btn-img">
+                                <img src="./assets/img/database.svg" alt="database-logo" class="hobbie-logo">
+                                <p class="selectable">Base de données</p>
+                            </div>
+                            <div class="hobbie btn-img">
+                                <img src="./assets/img/pyphonk.svg" alt="album-logo" class="hobbie-logo">
+                                <p class="selectable">Album de Musique</p>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="right">
                         <h3 class="cv2-h3 selectable">Langues</h3>

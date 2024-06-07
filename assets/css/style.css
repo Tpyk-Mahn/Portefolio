@@ -52,7 +52,9 @@ html, body {
     margin: 0px;
 }
 
-html { scroll-behavior: smooth; }
+html { 
+    scroll-behavior: smooth;
+}
 
 header {
     width: 100%;
@@ -79,6 +81,7 @@ a, button,.media-contact, .scroll-down-circle, .btn-img, .school {
 a:hover, button:hover, .media-contact:hover, .scroll-down-circle:hover, .btn-img:hover, .school:hover {
     transform: scale(1.1);
     transition: transform 0.2s;
+    cursor: pointer;
 }
 
 .div-title {
@@ -561,10 +564,10 @@ a:hover, button:hover, .media-contact:hover, .scroll-down-circle:hover, .btn-img
 
 #wline {
     background-color: var(--white-color);
-    height: 9vw;
+    height: 5vw;
     width: 0.1vw;
     position: absolute;
-    margin: 30vw 0vw 0vw 8.78vw;
+    margin: 8vw 0vw 0vw 3.78vw;
     z-index: 1;
 }
 
@@ -593,9 +596,38 @@ a:hover, button:hover, .media-contact:hover, .scroll-down-circle:hover, .btn-img
     box-shadow: -0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.25);
 }
 
+.cv-experience .cv-progression {
+    margin-top: 2vw;
+}
+
 .cv-experience h4 {
     color: var(--black-color);
     font-weight: 900;
+}
+
+.cv-experience h5, .cv-experience p {
+    color: var(--black-color);
+}
+
+.cv-download {
+    height: 10vw;
+    margin: 4vw 0vw 0vw 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+
+.cv-download button {
+    width: 25vw;
+    height: 5vw;
+    margin: 0px;
+    font-family: 'Mauline';
+    font-size: var(--h3-text-size);
+    color: var(--white-color);
+    background-color: var(--black-color);
+    border: none;
+    border-radius: 5vw;
 }
 
 .cv-black-h3 {
@@ -733,6 +765,10 @@ a:hover, button:hover, .media-contact:hover, .scroll-down-circle:hover, .btn-img
     margin: 15vw 0vw 0vw 5vw;
 }
 
+.cv2 .left .cv2-wrap {
+    margin-left: 5vw;
+}
+
 .cv2 .right .cv2-h3 {
     margin: 2vw 0vw 0vw 0vw;
 }
@@ -774,6 +810,7 @@ a:hover, button:hover, .media-contact:hover, .scroll-down-circle:hover, .btn-img
 .hobbie-logo {
     width: 4vw;
 }
+
 .contact {
     width: 100vw;
     height: 100vh;
@@ -910,8 +947,12 @@ a:hover, button:hover, .media-contact:hover, .scroll-down-circle:hover, .btn-img
 
 #contact-text {
     background-color: var(--white-color);
-    width: 16vw;
-    height: 9vw;
+    width: 25vw;
+    height: 11vw;
+    max-width: 25vw;
+    min-width: 25vw;
+    min-height: 11vw;
+    max-height: 11vw;
     margin: 1vw 0vw 0vw 2.3vw;
     border: none;
     border-radius: 0.5vw;
